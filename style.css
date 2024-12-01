@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, rgba(221, 230, 193, 1) 0%, rgba(159, 191, 191, 1) 20%, rgba(218, 178, 230, 1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.green-box {
+    border: 2px solid limegreen;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+
+.content-wrapper,
+.content {
+    overflow: hidden;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.actual-content {
+    overflow-y: auto;
+    flex: 1;
+    max-width: 1000px;
+    align-self: center;
+    font-size: 18px;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section .section-content {
+    margin: 0;
+    text-align: center;
+    margin: 5px 0;
+}
+
+section img {
+    min-width: 0;
+    width: 600px;
+    max-width:100%;
+    object-fit: cover;
+    align-self: stretch
+}
+
+.img-container {
+    width: 100%;
+    text-align: center
+}
+
+figure.caption-and-image {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+figcaption.caption {
+    flex: 1;
+    text-align: left;
+}
+
+figcaption.caption b{
+    font-size: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.content {
+    background-color: #222;
+    color: #f2f2f2;
+    border-radius: 3px;
+    margin: 10px;
+    padding: 15px;
+    gap: 5px;
+}
+
+.content hr {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    background-color: darkmagenta;
+    color: #eee;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+header h1 {
+    /* Trick to add gradiant to text */
+    background: linear-gradient(45deg, red, orange, yellow, rgb(189, 255, 189), rgb(127, 212, 48), red);
+    background-clip: text;
+    color: transparent;
+}
+
+footer {
+    color: #f2f2f2;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    /* Make things smaller for mobile */
+    .content {
+        border-radius:0;
+        margin: 0;
+    }
+    footer {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+}
