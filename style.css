@@ -122,6 +122,11 @@ footer {
     font-size: 15px;
 }
 
+footer img {
+    width: 1em;
+    vertical-align: top;
+}
+
 footer a {
     color: inherit
 }
