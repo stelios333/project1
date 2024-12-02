@@ -112,6 +112,7 @@ header {
 header h1 {
     /* Trick to add gradiant to text */
     background: linear-gradient(45deg, red, orange, yellow, rgb(189, 255, 189), rgb(127, 212, 48), red);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
