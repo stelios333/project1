@@ -22,6 +22,7 @@ body {
     padding: 7px;
 }
 
+
 .content-wrapper,
 .content {
     flex: 1;
@@ -38,6 +39,51 @@ body {
     flex: 1;
     align-self: center;
     font-size: 18px;
+}
+
+.actual-content * {
+    opacity: 0;
+    animation: fadeIn 0.3s forwards 0.1s;
+}
+
+.actual-content section:nth-of-type(1) {
+    animation-delay: 0.15s;
+}
+
+.actual-content section:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+
+.actual-content section:nth-of-type(3) {
+    animation-delay: 0.25s;
+}
+
+.actual-content section:nth-of-type(4) {
+    animation-delay: 0.3s;
+}
+
+.actual-content section:nth-of-type(5) {
+    animation-delay: 0.35s;
+}
+
+.actual-content section:nth-of-type(6) {
+    animation-delay: 0.4s;
+}
+
+.actual-content section:nth-of-type(7) {
+    animation-delay: 0.45s;
+}
+
+.actual-content section:nth-of-type(8) {
+    animation-delay: 0.5s;
+}
+
+.actual-content section:nth-of-type(9) {
+    animation-delay: 0.55s;
+}
+
+.actual-content section:nth-of-type(10) {
+    animation-delay: 0.6s;
 }
 
 section {
@@ -100,6 +146,7 @@ figcaption.caption b {
 
 header {
     position: sticky;
+    z-index: 1;
     top: 0;
     width: 100%;
     background-color: darkmagenta;
@@ -143,6 +190,11 @@ footer a:visited {
     color: rgba(255, 255, 255, 0.6)
 }
 
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 
 @media only screen and (max-width: 800px) {
 
