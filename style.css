@@ -91,12 +91,6 @@ section {
     margin-bottom: 10px;
 }
 
-section .section-content {
-    margin: 0;
-    text-align: center;
-    margin: 5px 0;
-}
-
 section img {
     min-width: 0;
     width: 600px;
@@ -110,7 +104,7 @@ section img {
     text-align: center
 }
 
-figure.caption-and-image {
+div.caption-and-image {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -120,14 +114,12 @@ figure.caption-and-image {
     border-radius: 5px;
 }
 
-figcaption.caption {
+div.caption {
     flex: 1;
     text-align: left;
 }
 
-figcaption.caption b {
-    font-size: 20px;
-    display: block;
+div.caption h3 {
     margin-bottom: 5px;
 }
 
